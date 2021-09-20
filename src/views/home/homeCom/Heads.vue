@@ -68,7 +68,7 @@ export default {
   font-size: 20px;
 }
 .days {
-  color: orange;
+  color: #409EFF;
   font-size: 25px;
 }
 </style>

@@ -8,13 +8,28 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/home/Home.vue')
+    component: () => import('../views/home/Home.vue'),
+    redirect: '/index',
+    children:[
+      {
+        path: '/index',
+        name: 'Index',
+        component: () => import('../views/index/Index.vue')
+      },
+      {
+        path: '/account/all',
+        name: 'account_all',
+        meta:{bread:['账户管理','所有人员']},//定义面包屑路由元信息。
+        component: () => import('../views/account/all.vue')
+      }
+    ]
   },
   {
     path: '/login',
     name: 'Login',
     component: () => import('../views/Login.vue')
   },
+  
   {
     path: '*',
     name: '/404',
