@@ -40,7 +40,7 @@ export default {
         ...mapState(["rowData"])
     },
     beforeUpdate(){
-        console.log('---',this.rowData)
+        // console.log('---',this.rowData)
         this.ruleForm = this.rowData
     },
     data(){

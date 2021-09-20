@@ -18,10 +18,10 @@
               </div>
             </div>
             <div class="fr">
-              <el-button type="primary" @click="toShow({})">新建角色</el-button>
-              <el-button :disabled="disable">启动</el-button>
-              <el-button :disabled="disable">冻结</el-button>
-              <el-button :disabled="disable">删除</el-button>
+              <el-button type="primary" @click="toShow({})" size="mini">新建角色</el-button>
+              <el-button :disabled="disable" size="mini">启动</el-button>
+              <el-button :disabled="disable" size="mini">冻结</el-button>
+              <el-button :disabled="disable" size="mini">删除</el-button>
             </div>
           </div>
         </el-card>
