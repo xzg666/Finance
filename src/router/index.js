@@ -21,7 +21,19 @@ const routes = [
         name: 'account_all',
         meta:{bread:['账户管理','所有人员']},//定义面包屑路由元信息。
         component: () => import('../views/account/all.vue')
+      },
+      {
+        path: '/product/all',
+        name: 'product_all',
+        meta:{bread:['产品管理','全部产品']},//定义面包屑路由元信息。
+        component: () => import('../views/product/all.vue')
+      },{
+        path: '/product/detail',
+        name: 'product_detail',
+        meta:{bread:['产品管理','全部产品','详情']},//定义面包屑路由元信息。
+        component: () => import('../views/product/detail.vue')
       }
+    
     ]
   },
   {
